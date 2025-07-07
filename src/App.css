@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: box-shadow 0.5s;
+}
+
+.App.glow {
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc inset;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: #00ffcc;
+  color: #0d0d0d;
+  font-size: 1.2rem;
+  border: none;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* .chart-container {
+  margin-top: 30px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+} */
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+
+  button {
+    background-color: #333;
+    color: #fff;
+  }
+}
+
+
